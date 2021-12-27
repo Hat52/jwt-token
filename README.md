@@ -3,12 +3,12 @@ jwt token implemented using node js
 
 in this project I just implemented the jwt token based api authentication and also used the refresh api to refresh the expired tokens
 
-our setver is running on port 4000
+our server is running on port 4000
 
-for login and generation the toke use this api
+for generating the token use this api
 http:localhost:4000/login
 body{
-email:'email@test.com'
+email:'email@test.com' //test api you can change it in the code
 password:'password'
 }
 it will return a status and token and a refresh token
@@ -31,7 +31,7 @@ token:token that is returned by the login api
 }
 the token will be available for only one minute
 
-and now to refresh the token usr the api http://localhost:4000/test
+and now to refresh the token use the api http://localhost:4000/test
 body{
 refreshToken:refreshToken that is returned by the login api
 }
